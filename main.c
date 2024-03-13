@@ -1,16 +1,16 @@
 #include <stdio.h>
 
-int main() {
-    int height, width, perimeter;
+int
+main ()
+{
+  int height, width, perimeter;
 
-    printf("Nhap chieu dai hinh chu nhat: ");
-    scanf("%d", &height);
-    
-    printf("Nhap chieu rong hinh chu nhat: ");
-    scanf("%d", &width);
-    
-    perimeter = 2 * (height + width)  ; 
-    printf("Chu vi hinh chu nhat la: %d\n", perimeter);
+  printf ("Enter the height and width of the rectangle: ");
+  scanf ("%d %d", &height, &width);
 
-    return 0;
+  perimeter = (height + width) * 2;
+
+  printf ("Perimeter of the rectangle: %d\n", perimeter);
+
+  return 0;
 }
