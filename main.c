@@ -3,12 +3,14 @@
 int main() {
     int height, width, perimeter;
 
-    printf("Enter the height and width of the rectangle: ");
-    scanf("%d %d", &height, &width);
+    printf("Nhap chieu dai hinh chu nhat: ");
+    scanf("%d", &height);
     
-    //Write your code here
-   
-    printf("Perimeter of the rectangle: %d\n", perimeter);
+    printf("Nhap chieu rong hinh chu nhat: ");
+    scanf("%d", &width);
+    
+    perimeter = 2 * (height + width)  ; 
+    printf("Chu vi hinh chu nhat la: %d\n", perimeter);
 
     return 0;
 }
